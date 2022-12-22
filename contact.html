@@ -111,16 +111,41 @@ eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt i
 mollit anim id est laborum."</p>
 
 <center>
-<form action="/action_page.php">
+<form autocomplete="off">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name" value="John Doe"><br>
-   <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email" value="XXX@uitm.edu.my"><br>
   <label for="hi">Message Us!:</label><br>
   <input type="text" id="hi" name="hi" value="dont look back in anger"><br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" onclick="gotowhatsapp()" name="submit"
+                     value="Send" />
 </form> 
 </center>
+
+
+   <script>
+          function gotowhatsapp() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var service = document.getElementById("service").value;
+
+            var url =
+              "https://wa.me/0197740754?text=" +
+              "Name: " +
+              name +
+              "%0a" +
+              "Phone: " +
+              phone +
+              "%0a" +
+              "Email: " +
+              email +
+              "%0a" +
+              "Service: " +
+              service;
+
+            window.open(url, "_blank").focus();
+          }
+        </script>
 	
 
 </td>  
