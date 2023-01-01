@@ -50,6 +50,408 @@ h2 {
 }
 </style>
 
+<!--For slide's arrow-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style media="screen">
+
+#slider{
+width:100%;
+margin:0px auto;
+margin-top: 100px;
+max-width: 430px;
+position:relative;
+overflow:hidden;
+border: 1px solid white;
+box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+}
+
+.slide{
+width:100%;
+
+display:none;
+animation-name:fade;
+animation-duration:1s;
+}
+
+img{
+width:100%;
+}
+@keyframes fade{
+from{opacity:0.5;}
+to{opacity:1;}
+}
+
+.controls{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+font-size:1.5em;
+padding:20px 20px;
+border-radius:10px;
+}
+
+.controls:hover{
+background:grey;
+transition:0.8s;
+}
+
+.controls:active{
+color:#white;
+}
+
+#left-arrow{
+left:10px;
+color:#66455b;
+max-width: 100%;
+}
+
+#right-arrow{
+right:10px;
+color:#66455b;
+max-width: 100%;
+}
+
+#dots-con{
+
+text-align:center;
+}
+.dot{
+display:inline-block;
+background:pink;
+padding:8px;
+border-radius:0%;
+margin:10px 5px;
+max-width: 100%;
+}
+
+.active{
+background:rgb(217, 102, 178);
+}
+
+@media (max-width:576px){
+#slider{width:100%;
+
+}
+
+.controls{
+  font-size:1em;
+}
+
+#dots-con{
+  display:inline-block;
+  background:pink;
+  padding:8px;
+  border-radius:0%;
+  margin:10px 5px;
+  max-width: 100%;
+}
+}
+</style>
+
+<style>
+/*Base Mobile Layout*/
+.wrap {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#main-content, #sidebar-left, #sidebar-right {
+	width: 100%;
+	float: left;
+}
+
+/*3 Column Layout*/
+@media only screen and (min-width: 1024px) {
+	.wrap {
+		width: 1024px;
+		margin: 0 auto;
+	}
+	
+	#main-content {
+		width: 50%;
+		float: left;
+	}
+	
+	#sidebar-left {
+		width: 25%;
+		float: left;
+	}
+	
+	#sidebar-right {
+		width: 25%;
+		float: left;
+	}
+}
+
+/*Wide Layout*/
+@media only screen and (min-width: 1200px) {
+	.wrap {
+		width: 1140px;
+		margin: 0 auto;
+	}
+}
+
+/*Move Sidebar Position*/
+@media only screen and (min-width: 1024px) {
+	.wrap, #main-content, #sidebar-left, #sidebar-right {
+		position: relative;
+	}
+	
+	#main-content, #sidebar-left, #sidebar-right {
+		top: 0;
+	}
+	
+	#sidebar-right {
+		right: 0;
+	}
+	
+	#sidebar-left {
+		left: -50%; /*Width of #main-content*/
+	}
+	
+	#main-content {
+		left: 25%; /*Width of #left-sidebar*/
+	}
+}
+
+/*Optional 2 Column Layout*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	#sidebar-right {
+		width: 50%;
+	}
+	#sidebar-left {
+		width: 50%;
+	}
+	#main-content {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}
+</style>
+
+</head>
+
+<body>
+<table width="100%" align="center" border="5">
+
+<tr>
+<td>  
+<div>
+  <div style="position:relative;padding-top:35%;">
+<img src="image/banner.png" class="responsive" style="position:absolute;top:0;left:0;width:100%;height:100%;" alt="Banner">
+</div>
+</div>
+</td>
+</tr>
+
+</table>
+
+  <div class="topnav" id="myTopnav">
+  <a href="index.html" style="color:black">Home </a>     
+    <div class="dropdown">
+    <button class="dropbtn">Shop 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="shawl.html">Shawl</a>
+      <a href="bawal.html">Bawal</a>
+      <a href="deals.html">Deals</a>
+    </div>
+  </div>    
+  <a href="about us.html"style="color:black">About Us</a>      
+  <a href="contact.html"style="color:black">Contact</a>       
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>  
+</div>
+
+<link href="css/navbar.css" rel="stylesheet" type"text/css"/>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!--content-->
+
+<table width="80%" align="center" border="0">
+  <tr>
+    <td bgcolor="white">
+
+<center><iframe src="https://giphy.com/embed/MDJ9IbxxvDUQM" width="300" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kisses-hugs-MDJ9IbxxvDUQM">via GIPHY</a></p></center>	
+
+<div class="wrap">
+
+<div id="main-content">
+ <!--Slider-->
+  <div id="slider">
+    <div class="slide" style="background:white;">
+      <img src="image/shawl/angel_oak.jpg" alt="Angel Oak" >
+	  <ul>
+	  <li>Colour : White</li>
+	  </ul>
+    </div>
+
+    <div class="slide" style="background:white;">
+       <img src="image/shawl/sakura.jpg" alt="Syazwan is sitting" >
+    </div>
+
+    <div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is sitting with guitar" >
+    </div>
+
+    <div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is holding an electric pole" >
+    </div>
+
+    <!--Controlling arrows-->
+    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </span>
+    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </span>
+  </div>
+    <div id="dots-con">
+   <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+   </div>
+
+<script type="text/javascript">
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var index = 0;
+
+
+function prevSlide(n){
+  index+=n;
+  console.log("prevSlide is called");
+  changeSlide();
+}
+
+function nextSlide(n){
+  index+=n;
+  changeSlide();
+}
+
+changeSlide();
+
+function changeSlide(){
+
+  if(index>slides.length-1)
+    index=0;
+
+  if(index<0)
+    index=slides.length-1;
+
+
+
+    for(let i=0;i<slides.length;i++){
+      slides[i].style.display = "none";
+
+      dots[i].classList.remove("active");
+
+
+    }
+
+    slides[index].style.display = "block";
+    dots[index].classList.add("active");
+
+
+
+}
+
+</script>
+
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+mollit anim id est laborum."</p>	
+
+
+</div>
+
+<!--Potential Ads-->
+<div id="sidebar-left"><p>Now you can</p></div>
+
+<!--Potential Ads-->
+<div id="sidebar-right"><p>see me.</p></div>
+
+</div>
+
+</td>  
+</tr>
+
+<!--Footer-->
+
+<tr>
+<td bgcolor="#F6E2F7">
+<p align="center"><strong>Copyright 2022</strong></p>
+<p align="center"><strong>"Still in development"-last updated 31/12/2022</strong></p>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Home</title>
+
+<style>
+body {
+  background-color: #FFECFE ;
+}
+</style>
+
+<style>
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
+<style>
+ table {
+  border-style: ridge;
+  border-color: white;
+}
+</style>
+
+<style>
+html * {
+  font-size: 16px;
+  line-height: 1.625;
+  color: #000000;
+  font-family: Courier new;
+}
+</style>
+
+<style>
+h1 {
+  font-size: 40px;
+}
+</style>
+
+<style>
+h2 {
+  font-size: 30px;
+}
+</style>
+
 </head>
 
 <body>

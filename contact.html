@@ -222,3 +222,228 @@ function myFunction() {
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Home</title>
+
+<style>
+body {
+  background-color: #FFECFE ;
+}
+</style>
+
+<style>
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
+<style>
+ table {
+  border-style: ridge;
+  border-color: white;
+}
+</style>
+
+<style>
+html * {
+  font-size: 16px;
+  line-height: 1.625;
+  color: #000000;
+  font-family: Courier new;
+}
+</style>
+
+<style>
+h1 {
+  font-size: 40px;
+}
+</style>
+
+<style>
+h2 {
+  font-size: 30px;
+}
+</style>
+
+<style>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<style type="text/css">
+	   .whatsapp_box
+		{
+			background: #f2f2f2;
+			padding: 40px;
+			border-radius: 10px;
+			margin-top: 100px;
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(186,182,186,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(186,182,186,1);
+box-shadow: 0px 0px 5px 0px rgba(186,182,186,1);
+		}
+		
+		.whatsapp_box h2
+		{
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+	</style>
+
+</head>
+
+<body>
+<table width="100%" align="center" border="5">
+
+<tr>
+<td>  
+<div>
+  <div style="position:relative;padding-top:35%;">
+<img src="image/banner.png" class="responsive" style="position:absolute;top:0;left:0;width:100%;height:100%;" alt="Banner">
+</div>
+</div>
+</td>
+</tr>
+
+</table>
+
+  <div class="topnav" id="myTopnav">
+  <a href="index.html" style="color:black">Home </a>     
+    <div class="dropdown">
+    <button class="dropbtn">Shop 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="shawl.html">Shawl</a>
+      <a href="bawal.html">Bawal</a>
+      <a href="deals.html">Deals</a>
+    </div>
+  </div>    
+  <a href="about us.html"style="color:black">About Us</a>      
+  <a href="contact.html"style="color:black">Contact</a>       
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>  
+</div>
+
+<link href="css/navbar.css" rel="stylesheet" type"text/css"/>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!--content-->
+
+<table width="80%" align="center" border="0">
+  <tr>
+    <td bgcolor="white">
+	
+<h2 align="center">Order Now!</h2>	
+
+<h3 align="center">Direct Message Instagram</h3>	
+<center><a href="https://ig.me/m/licksma" target="blank"><img src="image/contact/ig.png"></center></a>
+
+<br>
+
+<center>
+<div class="container">
+	   <div class="row">
+		  <div class="col-md-7 mx-auto">
+		     <div class="whatsapp_box">
+			   <form autocomplete="off">
+				  
+				   <h2>Whatsapp</h2>
+				  
+			      <div class="form-group">
+				     <input type="text" name="Name" id="name" class="form-control" placeholder="Your Name *" value="" required="" />
+				  </div>
+				 
+				  <div class="form-group">
+				    <input type="text" name="Email" id="email" class="form-control" placeholder="Your Email *" value="" required="" />
+				  </div>
+				 
+				  <div class="form-group">
+				    <input type="number" name="Phone" id="phone" class="form-control" placeholder="Your Contact Number "
+                          value="" required="" />
+				  </div>				
+				 
+				 <div class="form-group">
+				     <select class="form-control" id="service">
+                          <option>Shawl</option>
+                          <option>Bawal</option>
+                          <option>Deals</option>
+						  
+                        </select>
+				 </div>
+					  
+				 <div class="form-group">
+					 <input type="submit" onclick="gotowhatsapp()" name="submit" class="btn btn-sm btn-success"
+                     value="Send!" />  
+			     </div>
+				 
+			 </div>
+				   
+			    </form>
+		  </div>
+	   </div>
+      </div>
+	</div>
+	</center>
+
+
+   <script>
+          function gotowhatsapp() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var service = document.getElementById("service").value;
+
+            var url =
+              "https://wa.me/60123845665?text=" +
+              "Name: " +
+              name +
+              "%0a" +
+              "Phone: " +
+              phone +
+              "%0a" +
+              "Email: " +
+              email +
+              "%0a" +
+              "Service: " +
+              service;
+
+            window.open(url, "_blank").focus();
+          }
+        </script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<br>
+</td>  
+</tr>
+
+<!--Footer-->
+
+<tr>
+<td bgcolor="#F6E2F7">
+<p align="center"><strong>Copyright 2022</strong></p>
+<p align="center"><strong>"Still in development"-last updated 31/12/2022</strong></p>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
