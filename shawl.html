@@ -72,8 +72,8 @@ width:100%;
 display:none;
 animation-name:fade;
 animation-duration:1s;
-}
 
+}
 img{
 width:100%;
 }
@@ -87,29 +87,26 @@ position:absolute;
 top:50%;
 transform:translateY(-50%);
 font-size:1.5em;
-padding:20px 20px;
-border-radius:10px;
+padding:15px 10px;
+border-radius:5px;
+
 }
 
 .controls:hover{
-background:grey;
-transition:0.8s;
+background:white;
+transition:0.3s;
 }
 
 .controls:active{
-color:#white;
+color:grey;
 }
 
 #left-arrow{
 left:10px;
-color:#66455b;
-max-width: 100%;
 }
 
 #right-arrow{
 right:10px;
-color:#66455b;
-max-width: 100%;
 }
 
 #dots-con{
@@ -118,15 +115,14 @@ text-align:center;
 }
 .dot{
 display:inline-block;
-background:pink;
+background:grey;
 padding:8px;
-border-radius:0%;
+border-radius:50%;
 margin:10px 5px;
-max-width: 100%;
 }
 
 .active{
-background:rgb(217, 102, 178);
+background:grey;
 }
 
 @media (max-width:576px){
@@ -139,12 +135,7 @@ background:rgb(217, 102, 178);
 }
 
 #dots-con{
-  display:inline-block;
-  background:pink;
-  padding:8px;
-  border-radius:0%;
-  margin:10px 5px;
-  max-width: 100%;
+  display:none;
 }
 }
 </style>
@@ -285,7 +276,8 @@ function myFunction() {
   <tr>
     <td bgcolor="white">
 
-<center><iframe src="https://giphy.com/embed/MDJ9IbxxvDUQM" width="300" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kisses-hugs-MDJ9IbxxvDUQM">via GIPHY</a></p></center>	
+<h2 align="center">Willow Edition (Shawl)</h2>	
+<h3 align="center">Please choose your preferred shawls</h3>	
 
 <div class="wrap">
 
@@ -294,9 +286,13 @@ function myFunction() {
   <div id="slider">
     <div class="slide" style="background:white;">
       <img src="image/shawl/angel_oak.jpg" alt="Angel Oak" >
-	  <ul>
-	  <li>Colour : White</li>
-	  </ul>
+	  <table border="5">
+	  <td valign="top" align="center">Colour</td>
+	  <td valign="top" align="center">White</td>
+	  <tr>
+	  <td valign="top" align="center">CARE INSTRUCTIONS</td>
+	  <td valign="top" align="center">Hand wash. Machine wash is not advisable. Wash separately.</td>
+	  </table>
     </div>
 
     <div class="slide" style="background:white;">
@@ -310,6 +306,44 @@ function myFunction() {
     <div class="slide" style="background:white;">
       <img src="image/shawl/sakura.jpg" alt="Syazwan is holding an electric pole" >
     </div>
+	
+	 <div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is holding an electric pole" >
+    </div>
+	
+	 <div class="slide" style="background:white;">
+      <img src="image/shawl/angel_oak.jpg" alt="Angel Oak" >
+	  <table>
+	  
+	  <td valign="top">Colour : White</td>
+	  <tr>
+	  <td valign="top">CARE INSTRUCTIONS : Hand wash. Machine wash is not advisable. Wash separately.</td>
+	  </table>
+    </div>
+
+    <div class="slide" style="background:white;">
+       <img src="image/shawl/sakura.jpg" alt="Syazwan is sitting" >
+    </div>
+
+    <div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is sitting with guitar" >
+    </div>
+
+    <div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is holding an electric pole" >
+    </div>
+	
+	 <div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is holding an electric pole" >
+    </div>
+	
+	<div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is holding an electric pole" >
+    </div>
+	
+	 <div class="slide" style="background:white;">
+      <img src="image/shawl/sakura.jpg" alt="Syazwan is holding an electric pole" >
+    </div>
 
     <!--Controlling arrows-->
     <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -318,12 +352,23 @@ function myFunction() {
   </span>
   </div>
     <div id="dots-con">
-   <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
+   <span class="bot"></span>
    </div>
 
 <script type="text/javascript">
 var slides = document.querySelectorAll(".slide");
-var dots = document.querySelectorAll(".dot");
+var dots = document.querySelectorAll(".bot");
 var index = 0;
 
 
@@ -367,20 +412,20 @@ function changeSlide(){
 
 </script>
 
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-mollit anim id est laborum."</p>	
+<br>
+
+<p align="center">Willow is specially curated for you who want assurance in modesty and style. 
+Giving you choice in styling the shawl, yet assuring you the coverage and comfort as 
+where it is needed to save your time. Definitely a new definition of modesty in modernity.</p>	
 
 
 </div>
 
 <!--Potential Ads-->
-<div id="sidebar-left"><p>Now you can</p></div>
+<div id="sidebar-left"><p align="center">Now you can</p></div>
 
 <!--Potential Ads-->
-<div id="sidebar-right"><p>see me.</p></div>
+<div id="sidebar-right"><p align="center">see me.</p></div>
 
 </div>
 
@@ -392,140 +437,11 @@ mollit anim id est laborum."</p>
 <tr>
 <td bgcolor="#F6E2F7">
 <p align="center"><strong>Copyright 2022</strong></p>
-<p align="center"><strong>"Still in development"-last updated 31/12/2022</strong></p>
+<p align="center"><strong>"Still in development"-last updated 01/01/2023</strong></p>
 </td>
 </tr>
 </table>
 
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html>
 
-<head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Home</title>
-
-<style>
-body {
-  background-color: #FFECFE ;
-}
-</style>
-
-<style>
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-</style>
-
-<style>
- table {
-  border-style: ridge;
-  border-color: white;
-}
-</style>
-
-<style>
-html * {
-  font-size: 16px;
-  line-height: 1.625;
-  color: #000000;
-  font-family: Courier new;
-}
-</style>
-
-<style>
-h1 {
-  font-size: 40px;
-}
-</style>
-
-<style>
-h2 {
-  font-size: 30px;
-}
-</style>
-
-</head>
-
-<body>
-<table width="100%" align="center" border="5">
-
-<tr>
-<td>  
-<div>
-  <div style="position:relative;padding-top:35%;">
-<img src="image/banner.png" class="responsive" style="position:absolute;top:0;left:0;width:100%;height:100%;" alt="Banner">
-</div>
-</div>
-</td>
-</tr>
-
-</table>
-
-  <div class="topnav" id="myTopnav">
-  <a href="index.html" style="color:black">Home </a>     
-    <div class="dropdown">
-    <button class="dropbtn">Shop 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="shawl.html">Shawl</a>
-      <a href="bawal.html">Bawal</a>
-      <a href="deals.html">Deals</a>
-    </div>
-  </div>    
-  <a href="about us.html"style="color:black">About Us</a>      
-  <a href="contact.html"style="color:black">Contact</a>       
-  
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>  
-</div>
-
-<link href="css/navbar.css" rel="stylesheet" type"text/css"/>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<!--content-->
-
-<table width="80%" align="center" border="0">
-  <tr>
-    <td bgcolor="white">
-
-<center><iframe src="https://giphy.com/embed/MDJ9IbxxvDUQM" width="300" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kisses-hugs-MDJ9IbxxvDUQM">via GIPHY</a></p></center>	
-	
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-mollit anim id est laborum."</p>	
-
-</td>  
-</tr>
-
-<!--Footer-->
-
-<tr>
-<td bgcolor="#F6E2F7">
-<p align="center"><strong>Copyright 2022</strong></p>
-<p align="center"><strong>"Still in development"-last updated 31/12/2022</strong></p>
-</td>
-</tr>
-</table>
-
-</body>
-</html>
