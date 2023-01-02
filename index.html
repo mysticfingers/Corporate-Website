@@ -11,7 +11,7 @@
 
 <style>
 body {
-  background-color: #FFECFE ;
+  background-color: white ;
 }
 </style>
 
@@ -98,7 +98,6 @@ img {vertical-align: middle;}
 html * {
   font-size: 16px;
   line-height: 1.625;
-  color: #000000;
   font-family: Courier new;
 }
 </style>
@@ -122,6 +121,12 @@ iframe {
  }
 </style>
 
+<style>
+.footer {
+   color: white;
+}
+</style>
+
 </head>
 
 <body>
@@ -131,7 +136,7 @@ iframe {
 <td>  
 <div>
   <div style="position:relative;padding-top:35%;">
-<img src="image/banner.png" class="responsive" style="position:absolute;top:0;left:0;width:100%;height:100%;" alt="Banner">
+<img src="image/banner.jpg" class="responsive" style="position:absolute;top:0;left:0;width:100%;height:100%;" alt="Banner">
 </div>
 </div>
 </td>
@@ -203,9 +208,9 @@ function myFunction() {
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="bot"></span> 
+  <span class="bot"></span> 
+  <span class="bot"></span> 
 </div>
 
 <script>
@@ -215,7 +220,7 @@ showSlides();
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName("bot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -277,13 +282,18 @@ Blogging and shopping about Muslim fashion? We've got your back!
 
 </td>  
 </tr>
+</table>
 
 <!--Footer-->
 
+<table bgcolor="black" width="100%" border="0">
 <tr>
-<td bgcolor="#F6E2F7">
+<td>
+<br>
+<div class="footer"
 <p align="center"><strong>Copyright 2022</strong></p>
-<p align="center"><strong>"Still in development"-last updated 01/01/2023</strong></p>
+<p align="center"><strong>"Still in development"-last updated 02/01/2023</strong></p>
+</div>
 </td>
 </tr>
 </table>
