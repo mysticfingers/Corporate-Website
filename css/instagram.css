@@ -1,0 +1,37 @@
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 45px;
+    height: 45px
+}
+
+.gg-instagram::after,
+.gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    top: 3px
+}
+
+.gg-instagram::before {
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+}

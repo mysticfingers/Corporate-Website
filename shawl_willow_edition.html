@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="icon" type="image/x-icon" href="/image/logo.png">
 <title>Shawl Willow Edition</title>
 
 <style>
@@ -54,6 +54,8 @@ h2 {
 
 <!--For shop's arrow-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href='https://css.gg/instagram.css' rel='stylesheet'>
 
 <style media="screen">
 
@@ -211,10 +213,10 @@ background:grey;
 /*Optional 2 Column Layout*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	#sidebar-right {
-		width: 50%;
+		width: 100%;
 	}
 	#sidebar-left {
-		width: 50%;
+		width: 100%;
 	}
 	#main-content {
 		position: relative;
@@ -226,9 +228,69 @@ background:grey;
 
 <style>
 .footer {
-   color: white;
+   color: black;
 }
 </style>
+
+<style>
+table { 
+    table-layout:fixed;
+}
+
+td { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .tablemobile {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+</style>
+
+<style>
+img {
+   max-width: 100%;
+   height: auto;
+ }
+</style>
+
+<style>
+.footer {
+   color: black;
+}
+</style>
+
+<style>
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #333;
+}
+
+/* selected link */
+a:active {
+  color: grey;
+}	  
+	 
+</style>
+
+<link href="css/navbar.css" rel="stylesheet" type"text/css"/>
 
 </head>
 
@@ -265,7 +327,6 @@ background:grey;
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>  
 </div>
 
-<link href="css/navbar.css" rel="stylesheet" type"text/css"/>
 
 <script>
 function myFunction() {
@@ -501,36 +562,10 @@ where it is needed to save your time. Definitely a new definition of modesty in 
 </div>
 
 <!--Potential Ads-->
-<div id="sidebar-left"><p align="center">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2252460172470793"
-     crossorigin="anonymous"></script>
-<!-- Naming my ad unit -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2252460172470793"
-     data-ad-slot="6702018143"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</p></div>
+<div id="sidebar-left"></div>
 
 <!--Potential Ads-->
-<div id="sidebar-right"><p align="center">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2252460172470793"
-     crossorigin="anonymous"></script>
-<!-- Naming my ad unit -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2252460172470793"
-     data-ad-slot="6702018143"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</p></div>
+<div id="sidebar-right"></div>
 
 </div>
 
@@ -540,19 +575,43 @@ where it is needed to save your time. Definitely a new definition of modesty in 
 
 <!--Footer-->
 
-<table bgcolor="black" width="100%" border="0">
+
+<table bgcolor="#e8c8e0" width="100%" border="0" align="center">
+
 <tr>
-<td>
-<br>
+
+<!--divider-->
+<td width="3%"></td>
+
+<td width="30%" valign="top">
 <div class="footer">
-<p align="center"><strong>All Rights Reserved</strong></p>
-<p align="center"><strong>Copyright Jasmine Hijab</strong></p>
-<p align="center"><strong>Designed by Matwan</strong></p>
+<p><a href="faq.html" target="blank">FAQ</a></p>
+<p><a href="gallery.html" target="blank">Gallery</a></p>
+<p><strong>All Rights Reserved</strong></p>
+<p><strong>Copyright Jasmine Hijab</strong></p>
+<p><strong>Jasmine Hijab Website / Designed by Matwan</strong></p>
 </div>
 </td>
-</tr>
-</table>
 
+<td width="30%" valign="top">
+<div class="footer">
+<p>Copyright Disclaimer under Section 107 of the copyright act 1976, allowance is made for fair use for purposes such as 
+criticism, comment, news reporting, scholarship, and research. Fair use is a use permitted by copyright statute that might 
+otherwise be infringing. Non-profit, educational or personal use tips the balance in favour of fair use.</p>
+</div>
+</td>
+
+<td width="30%" valign="top" align="center">
+<div class="footer">
+<p><strong>Social</strong></p>
+<a href="image/ig.png" target="blank"><i class="gg-instagram"></i></a>
+</div>
+</td>
+
+</tr>
+
+
+</table>
 </body>
 </html>
 
